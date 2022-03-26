@@ -25,10 +25,9 @@
   padding: 2em;
 }
 .item {
-  padding-bottom: 10px;
-}
-.category{
-  color: gray;
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-price {
   display: flex;
@@ -36,3 +35,6 @@
   align-items: center;
   padding-top: 0.7em;
 }
+
+
+ 

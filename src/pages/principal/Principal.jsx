@@ -21,7 +21,6 @@ function Principal() {
           <Route path="/register" element={<Register/>} />
           <Route path="/history" element={<History/>} />
           <Route path="/*" element={<NotFound/>} />
-
          </Routes>
       </div>
      </Router>

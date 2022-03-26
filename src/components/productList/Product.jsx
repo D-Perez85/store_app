@@ -5,9 +5,9 @@ function Product({itemSlice}) {
     <>
       <div className="content-product">
         <div className="product-list">
-        {itemSlice.map((value)=>{
-          return <Card key={value.id}  {...value}/>
-        })}
+        {itemSlice.map((product) => {
+            return <Card key={product._id} product={product} />;
+          })}
  
         </div>
       </div>
