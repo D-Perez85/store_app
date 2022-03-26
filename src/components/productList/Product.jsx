@@ -1,11 +1,13 @@
 import React from "react";
 import Card from '../productCard/Card'; 
-function Product() {
+function Product({copiaItems}) {
   return (
     <>
       <div className="content-product">
         <div className="product-list">
-        <h2>CONTEINER</h2>
+        {copiaItems.map((value)=>{
+          return <Card key={value.id}  {...value}/>
+        })}
  
         </div>
       </div>
