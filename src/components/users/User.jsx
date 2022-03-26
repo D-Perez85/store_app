@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
  import coin from "../../assets/icons/coin.svg";
- 
+import { UserContext } from "../../context/userContex";
+
  function Users() {
- 
+  const {users} = useContext(UserContext); 
    return (
     <div className="content-users">
       <div className="user">
-        <h5>Name</h5>
+        <h5>{users.name}</h5>
         <img src={coin} alt="user-coins" className="coins" />
-            Points
+            {users.points}
       </div>
     </div>
   );
