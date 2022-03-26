@@ -1,0 +1,22 @@
+.footer-div{
+    max-width: 1200px;
+    margin: 10px auto 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    background-color: $background-footer; 
+}
+.footer-paragraph{
+    margin-right: 5px;
+    font-size: 0.8em;
+    color: #1c1c1c;
+    font-weight: bold;
+}
+.footer-paragraph:hover{
+   font-size: 18px;
+   text-decoration: underline;
+}
+.text-footer{
+    text-decoration: none;
+}
