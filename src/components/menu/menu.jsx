@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/home.png";
+import Users from "../users/User";
  
  function Menu() {
   return (
@@ -8,8 +9,10 @@ import logo from "../../assets/images/home.png";
       <Link className="style" to="/home">
         <img className="logo" src={logo} alt="logo-home" />
       </Link>
-
+    
       <div class="boton-menu">
+      <Users/>
+
           <input id="desplegar" type="checkbox" class="custom-checkbox" />
         <label for="desplegar" class="label-menu">
           <div class="mostrar-menu">
