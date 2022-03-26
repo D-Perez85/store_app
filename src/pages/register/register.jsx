@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
  
  function Register() {
   const [userName, setUserName] = useState("");
@@ -10,7 +12,18 @@ import { Link } from "react-router-dom";
   const [validateEmail, setValidateEmail] = useState(false);
   const [boton, habilitarBoton] = useState(false);
  
-  const onChangePassword = (e) => {
+  const notify = () =>
+     
+    toast.success("Succesful Register!!!", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+   const onChangePassword = (e) => {
     setUserPassword(e.target.value);
   };
   const onChangeEmail = (e) => {
@@ -45,6 +58,7 @@ import { Link } from "react-router-dom";
   useEffect(() => {
     if (!!validatePassword && !!validateUsername && !!validateEmail) {
       habilitarBoton(false);
+      notify();
     } else {
       habilitarBoton(true);
     }
@@ -113,6 +127,7 @@ import { Link } from "react-router-dom";
           <button disabled={boton}  className="btn">
             GO TO MARKET COINS
           </button>
+          <ToastContainer />
          </Link>
       </div>
     </div>
