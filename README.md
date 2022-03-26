@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# STORE APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto representa una pagina web comercial, la cual ofrece interacción con el usuario. 
 
-## Available Scripts
+Es una tienda de artículos electrónicos, la cual contiene diversas categorías de productos y precios, (contiene filtros a traves de una lista desplegable y dos botones, pudiendo dar con la categoria buscada y ordenae segun el valor del producto). 
 
-In the project directory, you can run:
+La interacción con el Usuario refiere a la opción de comprar algún producto, mediante el uso representativo de Coins (monedas) que permiten obtener dichos productos, y en caso de no contar con suficiente créditos (Coins) se habilita la opción de obtener los restantes para su posterior compra con un Link a un formulario de Login.
+Dicho link cuenta con dos opciones:
+  1) Usuario ya logueado : permite el acceso tipeando username y password respectivamente
+  2) Registrar a un usuario: se deben completar los campos requeridos, los cuales cuentan con validaciones dentro del formulario. 
+Ambos accesos redirigen la pagina para realizar el proceso de obtención de monedas.
+La pagina cuenta tambien con un menu lateral de opciones, donde se puede acceder al home, historial de compras, obtener nuevos coins y exit(este último redirige a una pestaña de google y sale de la tienda).
 
-### `npm start`
+>#### Algunos puntos importantes del proyecto: 
+              - Cuenta con la ultima version react-roouter-dom para las distintas vistas, 
+              - useContext para ir actualizando los cambios de State, 
+              - Presenta Sass como hoja de estilo en cascada, 
+              - Presenta modales que van informando de los distintos cambios en el State, (ejemplo succesful register, etc).
+             
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Comenzando 🚀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Instalación 🔧
 
-### `npm run build`
+### `Clonar` 
+Clonar el proyecto utilizando git clone  dentro de tu entorno local para poder obtener el codigo fuente. 
+```
+git clone https://github.com/D-Perez85/store_app.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+### `Instalar Dependencias`
+Instala las dependencias necesarias para poder correr la App...
+```
+npm install
+```
+### `Run`
+Una vez instaladas las dependencias podras correr la App con el comando start en el directorio del proyecto. 
+Una vez compilado podras ver el resultado en http://localhost:3000/
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
+## Learn More About React
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##
+Made with ❤️ by [Damian Perez](https://github.com/D-Perez85) 😊
