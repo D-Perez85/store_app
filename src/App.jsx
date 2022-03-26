@@ -1,10 +1,13 @@
 import Principal from "./pages/principal/Principal";
+import { ProductContextProvider } from './context/productContext';
 
 
 function App() {
   return (
     <div>
-      <Principal/>
+      <ProductContextProvider>
+          <Principal/>
+      </ProductContextProvider>
     </div>
   );
 }
