@@ -33,6 +33,11 @@ import Users from "../users/User";
                 GET COINS
               </Link>
             </li>
+            <li class="menu-texto style">
+              <Link className="style" to="/history">
+                HISTORY
+              </Link>
+            </li>
             <li class="menu-texto">
                 <a class="style" href="https://www.google.com.ar/">
                 EXIT</a>
