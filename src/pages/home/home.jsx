@@ -11,7 +11,6 @@ function Home() {
     <Menu/>
        <div className="content-home">
         <SectionHeader/>
-        <Product/>
         <SectionFooter/>
       </div>
       <Footer/>

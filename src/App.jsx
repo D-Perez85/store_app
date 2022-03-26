@@ -1,8 +1,10 @@
- 
+import Principal from "./pages/principal/Principal";
+
+
 function App() {
   return (
     <div className="app">
-      <h3>REWARD STORE</h3>
+      <Principal/>
     </div>
   );
 }

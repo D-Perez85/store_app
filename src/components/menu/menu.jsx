@@ -10,8 +10,7 @@ import logo from "../../assets/images/home.png";
       </Link>
 
       <div class="boton-menu">
-        <Users/>
-         <input id="desplegar" type="checkbox" class="custom-checkbox" />
+          <input id="desplegar" type="checkbox" class="custom-checkbox" />
         <label for="desplegar" class="label-menu">
           <div class="mostrar-menu">
             <div class="linea linea-top"></div>
