@@ -1,17 +1,27 @@
-import React from "react";
-import Select from "../../filters/select/Select"; 
-function Header() {
-   
+import React, { useContext } from "react";
+import { ProductContext } from "../../../context/productContext";
+import Select from "../../filters/select/Select";
+
+function Header({ page, setPage }) {
+  const { items, setCopiaItems } = useContext(ProductContext);
+
+  function filter(selected) {
+    setPage(false);
+    setCopiaItems(selected);
+  }
+  function btnReset() {
+    setCopiaItems(items);
+  }
   return (
     <>
       <div className="content-img"></div>
       <div className="content-filter">
-        <p className="pagination">page...</p>
+        <p className="pagination">{page ? "17 a 32" : "01 a 16"}</p>
         <div className="content-form">
           <form action="" className="form-flex">
             <p className="orderBy">Filter by: </p>
-            <Select/>
-             <button className="reset-filter" type="reset">
+            <Select filter={filter} />
+            <button className="reset-filter" type="reset" onClick={btnReset}>
               Reset Filter
             </button>
           </form>

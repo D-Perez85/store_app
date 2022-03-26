@@ -1,11 +1,11 @@
 import React from "react";
 import Card from '../productCard/Card'; 
-function Product({copiaItems}) {
+function Product({itemSlice}) {
   return (
     <>
       <div className="content-product">
         <div className="product-list">
-        {copiaItems.map((value)=>{
+        {itemSlice.map((value)=>{
           return <Card key={value.id}  {...value}/>
         })}
  
