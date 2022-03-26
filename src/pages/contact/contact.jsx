@@ -33,7 +33,7 @@ function Contact() {
 
         <div className="contact-right">
           <p className="text-paragraph">
-            Mi nombre es Damián Pérez, soy estudiante de Sistemas y estoy dando
+            Mi nombre es Damián Pérez, soy Analista de Sistemas y estoy dando
             mis primeros pasos profesionales en el mundo IT. <br /> Intento
             especializarme en desarrollo Web, por cierto mi gran pasión.
           </p>
