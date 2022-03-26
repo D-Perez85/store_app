@@ -1,8 +1,8 @@
 import React from "react";
  import arrowright from "../../../assets/icons/arrowright.svg";
-function Button() {
+ function Button({page,setPage}) {
   return (
-    <button className="arrows">
+    <button className="arrows" onClick={()=>setPage(!page)}>
       <img src={arrowright} alt="icon-arrow" />
     </button>
   );

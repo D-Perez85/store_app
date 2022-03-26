@@ -1,8 +1,8 @@
 import React from "react";
  import arrowleft from "../../../assets/icons/arrowleft.svg";
-function Button() {
+ function Button({page, setPage}) {
   return (
-    <button className="arrows">
+    <button className="arrows" onClick={()=>setPage(!page)}>
       <img src={arrowleft} alt="icon-arrow"/>
     </button>
   );
