@@ -13,7 +13,6 @@ import "react-toastify/dist/ReactToastify.css";
   const [boton, habilitarBoton] = useState(false);
  
   const notify = () =>
-     
     toast.success("Succesful Register!!!", {
       position: "top-center",
       autoClose: 3000,
@@ -32,19 +31,16 @@ import "react-toastify/dist/ReactToastify.css";
   const onChangeUser = (e) => {
     setUserName(e.target.value);
   };
-
   useEffect(() => {
     if (userName.length !== 0) {
       setValidateUsername(userName.length > 5);
     }
   }, [userName]);
-
   useEffect(() => {
     if (email.length !== 0) {
       setValidateEmail(email.includes(".") && email.includes("@"));
     }
   }, [email]);
-
   useEffect(() => {
     if (userPassword.length !== 0) {
       setValidatePassword(
@@ -54,7 +50,6 @@ import "react-toastify/dist/ReactToastify.css";
       );
     }
   }, [userPassword]);
-
   useEffect(() => {
     if (!!validatePassword && !!validateUsername && !!validateEmail) {
       habilitarBoton(false);
@@ -63,7 +58,6 @@ import "react-toastify/dist/ReactToastify.css";
       habilitarBoton(true);
     }
   }, [validatePassword, validateUsername, validateEmail]);
-
   return (
     <div className="flex-container-register centered">
       <div className="card-register ">
@@ -78,16 +72,13 @@ import "react-toastify/dist/ReactToastify.css";
             autoComplete="off"
             placeholder="Ingrese su nombre de Usuario"
             name="username"
-            type="text"
-          />
+            type="text"/>
           <span
             id="comment-register"
-            className={validateUsername ? " error" : " visible error"}
-          >
+            className={validateUsername ? " error" : " visible error"}>
             Username debe contener mas de 5 letras
           </span>
         </div>
-
         <div className="inputContainer">
           <input
             className={validateEmail ? "" : "inputError-register"}
@@ -96,16 +87,13 @@ import "react-toastify/dist/ReactToastify.css";
             autoComplete="off"
             placeholder="Ingrese su email"
             name="email"
-            type="email"
-          />
+            type="email"/>
           <span
             id="comment-register"
-            className={validateEmail ? " error" : " visible error"}
-          >
+            className={validateEmail ? " error" : " visible error"}>
             Email debe contener un @ y al menos un punto
           </span>
         </div>
-
         <div className="inputContainer">
           <input
             className={validatePassword ? "" : "inputError-register"}
@@ -113,16 +101,13 @@ import "react-toastify/dist/ReactToastify.css";
             onChange={onChangePassword}
             placeholder="Ingrese su Password"
             name="password"
-            type="password"
-          />
+            type="password"/>
           <span
             id="comment-register"
-            className={validatePassword ? " error" : " visible error"}
-          >
+            className={validatePassword ? " error" : " visible error"}>
             Password debe contener mas de 6 letras y un punto
           </span>
         </div>
-
         <Link className="style" to="/coins">
           <button disabled={boton}  className="btn">
             GO TO MARKET COINS

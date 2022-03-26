@@ -11,19 +11,16 @@ function LoginCard() {
   const onChangePassword = (e) => {
     setUserPassword(e.target.value);
   };
-
   useEffect(() => {
     if (userName.length !== 0) {
       setValidateUsername(userName === "username");
     }
   }, [userName]);
-
   useEffect(() => {
     if (userPassword.length !== 0) {
       setValidatePassword(userPassword === "password");
     }
   }, [userPassword]);
-
   useEffect(() => {
     if (!!validateUsername && !!validatePassword) {
       habilitarBoton(false);
@@ -31,11 +28,10 @@ function LoginCard() {
       habilitarBoton(true);
     }
   }, [validateUsername, validatePassword]);
-
   return (
     <div className="flex-container centered">
       <div className="card ">
-        <div className="regla title">
+        <div className="regla">
           <p className="title-form">Login Form</p>
         </div>
         <div className="regla">Username: Admite el valor "username".</div>
@@ -63,13 +59,11 @@ function LoginCard() {
             type="password"
           />
         </div>
-
         <Link className="style" to="/coins">
-          <button disabled={boton} className="btn-register">
+          <button disabled={boton} className="btn-login">
             LOGIN
           </button>
         </Link>
-
         <p className="register-link">
           Don´t have an account?
           <Link className="style-em" to="/register">
@@ -80,5 +74,4 @@ function LoginCard() {
     </div>
   );
 }
-
 export default LoginCard;

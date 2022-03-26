@@ -10,7 +10,6 @@ function Home() {
   const { copiaItems } = useContext(ProductContext);
   const [page, setPage] = useState(false);
   const itemSlice = page ? copiaItems.slice(16, 32) : copiaItems.slice(0, 16);
-
   return (
     <>
       <Menu />

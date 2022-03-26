@@ -1,15 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  :root {
-    --font-family-1: "IBM Plex Sans", sans-serif;
-    --font-family-2: "IBM Plex Mono", monospace;
-    --font-size-1: 15px;
-    --font-size-2: 16px;
-    --font-size-3: 19px;
-  }
+
   .contact-content {
     max-width: 1200px;
     width: 100%;
@@ -30,7 +19,7 @@
   }
   a {
     font-size: 20px;
-    color: black;
+    color: $black;
     text-decoration: none;
     margin-right: 5px;
     cursor: pointer;
@@ -52,7 +41,6 @@
       padding-top: 10px;
     }
     .content-icons {
-      /* justify-content: center; */
       align-items: center;
       flex-wrap: wrap;
     }

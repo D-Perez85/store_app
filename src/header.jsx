@@ -6,11 +6,7 @@ export const headers = {
 };
 
 export const API_URL = " https://coding-challenge-api.aerolab.co";
-
 export const API_URL_USER = `${API_URL}/user/me`;
-
 export const API_URL_PRODUCT = `${API_URL}/products`;
-
 export const API_URL_POINTS = `${API_URL}/user/points`;
-
 export const API_URL_REDEEM = `${API_URL}/redeem`;

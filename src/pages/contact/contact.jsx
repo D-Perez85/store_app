@@ -1,12 +1,9 @@
 import React from "react";
 import Menu from "../../../src/components/menu/Menu";
-import {
-  faGithubSquare,
-  faLinkedin,
-  faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
+import {faGithubSquare, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 function Contact() {
   return (
     <>
@@ -30,11 +27,10 @@ function Contact() {
             <FontAwesomeIcon icon={faEnvelope} />
           </div>
         </div>
-
         <div className="contact-right">
           <p className="text-paragraph">
             Mi nombre es Damián Pérez, soy Analista de Sistemas y estoy dando
-            mis primeros pasos profesionales en el mundo IT. <br /> Intento
+            mis primeros pasos profesionales en el mundo IT. <br /><br/> Intento
             especializarme en desarrollo Web, por cierto mi gran pasión.
           </p>
           <p className="text-paragraph">

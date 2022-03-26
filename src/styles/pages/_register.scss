@@ -36,12 +36,13 @@ input {
 #comment-register {
   color: white;
 }
-.btn-register {
+
+.btn {
   width: 100%;
   height: 45px;
   text-transform: uppercase;
-  background-color: #356fa9;
-  border: 1px solid black;
+  background-color: $bg-btn-register;
+  border: 1px solid $black;
   color: #f7fafc;
 }
 .error {

@@ -2,9 +2,7 @@
 @import './base/base';
 @import './base/settings';
 
-
 //COMPONENTS
-// @import './components/app'; 
 @import './components/card'; 
 @import './components/filters';
 @import './components/footer';
@@ -14,8 +12,6 @@
 @import './components/select';
 @import './components/users';
 @import './components/paginator';
-
-
 
 //PAGES
 @import './pages/menu';

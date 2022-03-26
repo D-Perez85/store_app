@@ -49,7 +49,6 @@ function Coin() {
     }
   }
  
-
   return (
     <>
       <Menu />
@@ -70,7 +69,6 @@ function Coin() {
                 name="credit"
                 value="1000"
                 onChange={handleClick}
-
                />
             </div>
             <div className="item-coins">
@@ -83,10 +81,8 @@ function Coin() {
                 name="credit"
                 value="5000"
                 onChange={handleClick}
-
                />
             </div>
-
             <div className="item-coins">
               <img src={coin} alt="" className="coins" />
               <label id="label-coins" for="3">7500</label>
@@ -97,7 +93,6 @@ function Coin() {
                 name="credit"
                 value="7500"
                 onChange={handleClick}
-
                />
             </div>
           </div>
