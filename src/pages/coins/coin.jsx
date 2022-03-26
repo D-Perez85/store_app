@@ -1,6 +1,4 @@
-import React, { useState, useContext } from "react";
-import { headers, API_URL_POINTS } from "../../header";
-import { UserContext } from "../../../src/context/userContex";
+import React, { useState } from "react";
 import Menu from "../../components/menu/Menu";
 import coin from "../../assets/icons/coin.svg";
 
@@ -8,19 +6,7 @@ import coin from "../../assets/icons/coin.svg";
 function Coin() {
   let [credits, setCredits] = useState("");
   let[validateBtn, setValidateBtn] = useState(false);
-  const { user, setUser } = useContext(UserContext);
-  const postUser = async () => {
-    const response = await fetch(`${API_URL_POINTS}`, {
-      method: "POST",
-      headers,
-      body: JSON.stringify({
-        amount: credits,
-      }),
-    });
-    response.json();
-    setUser(!user);
-  };
-
+   
   function handleClick(e) {
     if (e.target.value === "1000") {
       setCredits(1000);
@@ -34,10 +20,7 @@ function Coin() {
     }
   }
 
-  function handleSubmit(credits) {
-    postUser(credits);
-
-  }
+ 
 
   return (
     <>
@@ -90,7 +73,7 @@ function Coin() {
                />
             </div>
           </div>
-          <button className="submit-coin" onClick={handleSubmit}>SUBMIT</button>
+          <button className="submit-coin" >SUBMIT</button>
         </div>
       </div>
     </>

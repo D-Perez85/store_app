@@ -5,7 +5,7 @@ import logo from "../../assets/images/home.png";
  function Menu() {
   return (
     <header>
-      <Link className="style" to="/">
+      <Link className="style" to="/home">
         <img className="logo" src={logo} alt="logo-home" />
       </Link>
 
@@ -21,12 +21,12 @@ import logo from "../../assets/images/home.png";
         <div class="menu-desplazable" id="menuList">
           <ul>
             <li class="menu-texto style">
-              <Link className="style" to="/">
+              <Link className="style" to="/home">
                 HOME
               </Link>
             </li>
             <li class="menu-texto style">
-              <Link className="style" to="/">
+              <Link className="style" to="/login">
                 GET COINS
               </Link>
             </li>
